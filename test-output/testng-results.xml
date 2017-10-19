@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3369" started-at="2017-10-19T09:59:21Z" finished-at="2017-10-19T09:59:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3369" started-at="2017-10-19T09:59:21Z" finished-at="2017-10-19T09:59:24Z">
+      <class name="solodkova3.AppTest">
+        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:solodkova3.AppTest@58651fd0]" name="initTestSuite" is-config="true" duration-ms="5" started-at="2017-10-19T12:59:21Z" finished-at="2017-10-19T12:59:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestSuite -->
+        <test-method status="PASS" signature="testSingIn()[pri:0, instance:solodkova3.AppTest@58651fd0]" name="testSingIn" duration-ms="3358" started-at="2017-10-19T12:59:21Z" finished-at="2017-10-19T12:59:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSingIn -->
+      </class> <!-- solodkova3.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
