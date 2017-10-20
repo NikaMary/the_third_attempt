@@ -30,13 +30,11 @@ public class TestNgTestBase {
 
   @BeforeSuite
   public void initTestSuite() throws IOException {
-	  baseUrl = "http://localhost/";
-	  //baseUrl = PropertyLoader.loadProperty("site.url");
+	   baseUrl = PropertyLoader.loadProperty("site.url");
 	  //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
   }
 
-  
-  
   
   
   /* @AfterSuite(alwaysRun = true)

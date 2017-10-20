@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="2892" started-at="2017-10-19T10:08:34Z" finished-at="2017-10-19T10:08:37Z">
+  <suite name="Tests" duration-ms="3554" started-at="2017-10-20T10:21:00Z" finished-at="2017-10-20T10:21:04Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="2892" started-at="2017-10-19T10:08:34Z" finished-at="2017-10-19T10:08:37Z">
+    <test name="Test1" duration-ms="3554" started-at="2017-10-20T10:21:00Z" finished-at="2017-10-20T10:21:04Z">
       <class name="solodkova3.AppTest">
-        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:solodkova3.AppTest@2812cbfa]" name="initTestSuite" is-config="true" duration-ms="7" started-at="2017-10-19T13:08:34Z" finished-at="2017-10-19T13:08:34Z">
+        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:solodkova3.AppTest@7a79be86]" name="initTestSuite" is-config="true" duration-ms="6" started-at="2017-10-20T13:21:00Z" finished-at="2017-10-20T13:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTestSuite -->
-        <test-method status="PASS" signature="testSingIn()[pri:0, instance:solodkova3.AppTest@2812cbfa]" name="testSingIn" duration-ms="2880" started-at="2017-10-19T13:08:34Z" finished-at="2017-10-19T13:08:37Z">
+        <test-method status="PASS" signature="testSingIn()[pri:0, instance:solodkova3.AppTest@7a79be86]" name="testSingIn" duration-ms="3542" started-at="2017-10-20T13:21:00Z" finished-at="2017-10-20T13:21:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSingIn -->
       </class> <!-- solodkova3.AppTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Tests -->
 </testng-results>

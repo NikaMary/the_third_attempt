@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3369" started-at="2017-10-19T09:59:21Z" finished-at="2017-10-19T09:59:24Z">
+  <suite name="Default suite" duration-ms="3408" started-at="2017-10-20T10:43:55Z" finished-at="2017-10-20T10:43:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3369" started-at="2017-10-19T09:59:21Z" finished-at="2017-10-19T09:59:24Z">
+    <test name="Default test" duration-ms="3408" started-at="2017-10-20T10:43:55Z" finished-at="2017-10-20T10:43:59Z">
       <class name="solodkova3.AppTest">
-        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:solodkova3.AppTest@58651fd0]" name="initTestSuite" is-config="true" duration-ms="5" started-at="2017-10-19T12:59:21Z" finished-at="2017-10-19T12:59:21Z">
+        <test-method status="PASS" signature="initTestSuite()[pri:0, instance:solodkova3.AppTest@58651fd0]" name="initTestSuite" is-config="true" duration-ms="7" started-at="2017-10-20T13:43:55Z" finished-at="2017-10-20T13:43:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTestSuite -->
-        <test-method status="PASS" signature="testSingIn()[pri:0, instance:solodkova3.AppTest@58651fd0]" name="testSingIn" duration-ms="3358" started-at="2017-10-19T12:59:21Z" finished-at="2017-10-19T12:59:24Z">
+        <test-method status="PASS" signature="testSingIn()[pri:0, instance:solodkova3.AppTest@58651fd0]" name="testSingIn" duration-ms="3399" started-at="2017-10-20T13:43:55Z" finished-at="2017-10-20T13:43:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSingIn -->

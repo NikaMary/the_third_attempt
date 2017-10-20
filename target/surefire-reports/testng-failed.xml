@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Command line suite]">
-  <test name="Command line test(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Tests]">
+  <test name="Test1(failed)">
     <classes>
       <class name="solodkova3.AppTest">
         <methods>
@@ -10,5 +10,5 @@
         </methods>
       </class> <!-- solodkova3.AppTest -->
     </classes>
-  </test> <!-- Command line test(failed) -->
-</suite> <!-- Failed suite [Command line suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->
