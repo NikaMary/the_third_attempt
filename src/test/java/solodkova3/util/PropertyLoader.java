@@ -17,7 +17,7 @@ public class PropertyLoader {
   private static final String DEBUG_PROPERTIES = "/debug.properties";
 
   public static Capabilities loadCapabilities() throws IOException {
-    return loadCapabilities(System.getProperty("application.properties", DEBUG_PROPERTIES));
+	 return loadCapabilities(System.getProperty("application.properties", DEBUG_PROPERTIES));
   }
 
   public static Capabilities loadCapabilities(String fromResource) throws IOException {

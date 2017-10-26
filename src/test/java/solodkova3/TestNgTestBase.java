@@ -6,12 +6,16 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
+import ru.stqa.selenium.factory.WebDriverPool;
+//import ru.stqa.selenium.factory.WebDriverFactory;
+//import ru.stqa.selenium.factory.WebDriverFactoryMode;
 import solodkova3.util.PropertyLoader;
 
 
@@ -25,40 +29,38 @@ public class TestNgTestBase {
   protected static String baseUrl;
   protected static Capabilities capabilities;
   
+  protected static WebDriver driver;
+  //protected static String browserName;
   
    //protected WebDriver driver;
 
   @BeforeSuite
   public void initTestSuite() throws IOException {
 	   baseUrl = PropertyLoader.loadProperty("site.url");
-	  //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	   //browserName = PropertyLoader.loadProperty("browser.name");
+	   capabilities = PropertyLoader.loadCapabilities();
 	  
-  }
-
-  
-  
-  /* @AfterSuite(alwaysRun = true)
-	  public void tearDown() {
+	  /* gridHubUrl = PropertyLoader.loadProperty("");
+	    if ("".equals(gridHubUrl)) {
+	      gridHubUrl = null;
+	    }*/
+	   //capabilities = PropertyLoader.loadCapabilities(); 
+	    
+ }
+ 
+  @BeforeMethod
+  public void initWebDriver() throws IOException {
+	  /*if (browserName.equals("chrome")) capabilities = DesiredCapabilities.chrome();
+	  else capabilities = DesiredCapabilities.firefox();*/
+	  capabilities = PropertyLoader.loadCapabilities();
+	  driver = WebDriverPool.DEFAULT.getDriver(capabilities);
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  }*/
-
-	  //driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-    //baseUrl = PropertyLoader.loadProperty("http://localhost/");
-   /* gridHubUrl = PropertyLoader.loadProperty("");
-    if ("".equals(gridHubUrl)) {
-      gridHubUrl = null;
-    }
-    capabilities = PropertyLoader.loadCapabilities();
-    WebDriverFactory.setMode(WebDriverFactoryMode.THREADLOCAL_SINGLETON);*/
   }
-
- /* @BeforeMethod
-  public void initWebDriver() {
-    driver = WebDriverFactory.getDriver(gridHubUrl, capabilities);
-  }
-
-  @AfterSuite(alwaysRun = true)
+  
+  
+  @AfterSuite
   public void tearDown() {
-    WebDriverFactory.dismissAll();
-  }*/
-
+    WebDriverPool.DEFAULT.dismissAll();
+  }
+}
+  

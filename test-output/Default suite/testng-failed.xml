@@ -6,6 +6,7 @@
       <class name="solodkova3.AppTest">
         <methods>
           <include name="testSingIn"/>
+          <include name="initWebDriver"/>
           <include name="initTestSuite"/>
         </methods>
       </class> <!-- solodkova3.AppTest -->
